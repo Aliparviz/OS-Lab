@@ -21,6 +21,7 @@ main(void)
 
   for(;;){
     printf(1, "init: starting sh\n");
+    printf(1, "Ali Parvizi \nMohammad Motaei \n");
     pid = fork();
     if(pid < 0){
       printf(1, "init: fork failed\n");
@@ -34,4 +35,5 @@ main(void)
     while((wpid=wait()) >= 0 && wpid != pid)
       printf(1, "zombie!\n");
   }
+  
 }
